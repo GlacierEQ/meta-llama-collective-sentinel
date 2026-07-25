@@ -1,0 +1,9 @@
+{
+  "system_id": "meta-llama-collective-sentinel",
+  "shadow_mode": "ACTIVE",
+  "mastermind_synced": true,
+  "telemetry": {
+    "overhead_hidden_percent": 100.0,
+    "status": "ALL_GATHER_OPTIMAL"
+  }
+}
