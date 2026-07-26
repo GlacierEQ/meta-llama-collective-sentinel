@@ -1,0 +1,16 @@
+{
+  "repo": "meta-llama-collective-sentinel",
+  "algorithm": "sha256",
+  "file_count": 9,
+  "hashes": {
+    "README.md": "705dcfb6f33ef32afcfb896e01f9c28c9fa3a94f3d7a2e91adcf1c735cb816b5",
+    "AKOS.md": "5fdbf71f99d9a8052ee5c38c10c8cea288f5f6377d5cf34dfa728fc58a188147",
+    "AGENTS.md": "18d8860bd0018040c49ce603cecfc9316175f8186fa1c5d88b3bf45d51c63d82",
+    "HELIX_STRAND.md": "fa13ec7778b1ff7b8febbcc62d7b78b712610d0c3ac2ba185bc7f46326e7e338",
+    "mastermind_sidecar.py": "15888e02305bf06c0698fb7de61e997ce3c2f0e5facdf2c032eff11755039811",
+    "SECURITY_AND_FLEET_OPS.md": "26141c0f07d95847d679de423ddb7bdee6f3e319d204383c89a58d6d3bb610c7",
+    "HELIX.md": "8b14207c4906256fb86b391eeaa56fa575a7c126680710e8035c7b5219d2303f",
+    "tests/test_meta.py": "1bbb93c96fb765c6cd6aa90b8b5be54022e8964220be25dfe0a1d81e8ca3ad4f",
+    "src/meta_llama_collective_sentinel.py": "abc841ac25f79c1e2d4d336e22b08766d9b7a233dd3f52034096da12c2ab18e3"
+  }
+}
