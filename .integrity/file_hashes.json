@@ -1,5 +1,5 @@
 {
-  "file_count": 11,
+  "file_count": 12,
   "hashes": {
     "AGENTS.md": "18d8860bd0018040c49ce603cecfc9316175f8186fa1c5d88b3bf45d51c63d82",
     "AKOS.md": "5fdbf71f99d9a8052ee5c38c10c8cea288f5f6377d5cf34dfa728fc58a188147",
@@ -10,6 +10,7 @@
     "mastermind_sidecar.py": "15888e02305bf06c0698fb7de61e997ce3c2f0e5facdf2c032eff11755039811",
     "src/collective_monitor.cpp": "be6e00a077904b2b704367e3cd7c9fa3ebf1030cb4533d9d740bb53305ce48b4",
     "src/meta_llama_collective_sentinel.py": "abc841ac25f79c1e2d4d336e22b08766d9b7a233dd3f52034096da12c2ab18e3",
+    "src/nccl_sentinel.cpp": "6cfbd1dcb5aa0ebc61571b8d10fc9cc3275131b8ac8b35c32cd37317456e1ae1",
     "tests/test_collective_monitor.py": "7a28132260bea57e99eefbdfa38d00002b079816d11f163ef7303648f23d90a7",
     "tests/test_meta.py": "1bbb93c96fb765c6cd6aa90b8b5be54022e8964220be25dfe0a1d81e8ca3ad4f"
   }
