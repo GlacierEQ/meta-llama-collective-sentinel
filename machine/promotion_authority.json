@@ -1,0 +1,11 @@
+{
+  "schema": "glaciereq.promotion-authority-grant.v1",
+  "repository": "GlacierEQ/meta-llama-collective-sentinel",
+  "source_sha": "651ddfa8a55607ddb477e19f17f7c00ff8fee5e9a51fd3bf8f6709a6e2686252",
+  "proof_receipt_digest": "3e8ef93082501ff513a60e0237f6aff88d8e1f91fd9b86f0e38e11dfbb56c47c",
+  "not_after": 1788927149.234226,
+  "mac": "78dd451e2a3c683bd446977fbffd39675748d4a5c44cd15e76d147980e7afa99",
+  "issuer": "local_operator_promotion_authority",
+  "verified": true,
+  "secret_ref": "src/promotion_authority.py::LOCAL_OPERATOR_SECRET"
+}

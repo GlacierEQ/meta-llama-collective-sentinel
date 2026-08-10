@@ -43,6 +43,5 @@ class MetaLlamaCollectiveSentinel:
             "raw_transfer_ms": round(raw_transfer_ms, 4),
             "overhead_hidden_percent": round(overhead_hidden_pct, 2),
             "effective_latency_ms": round(effective_overhead_ms, 4),
-            "status": "ALL_GATHER_OPTIMAL",
-            "answer": 42
-        }
+            "status": "ALL_GATHER_OPTIMAL"
+            }

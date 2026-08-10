@@ -1,0 +1,32 @@
+{
+  "schema": "glaciereq.operability-receipt.v1",
+  "repository": "GlacierEQ/meta-llama-collective-sentinel",
+  "at": "2026-08-10T04:12Z",
+  "source_sha": "651ddfa8a55607ddb477e19f17f7c00ff8fee5e9a51fd3bf8f6709a6e2686252",
+  "entry": "scripts/operate.py",
+  "primary_output": {
+    "module": "meta_llama_collective_sentinel",
+    "ok": true,
+    "repository": "GlacierEQ/meta-llama-collective-sentinel",
+    "smoke": {
+      "args": [],
+      "content_checked": true,
+      "invoked": true,
+      "kind": "class",
+      "method": "optimize_all_gather",
+      "module_local": true,
+      "name": "MetaLlamaCollectiveSentinel",
+      "result": {
+        "bytes_per_gpu_mb": 8344.65,
+        "effective_latency_ms": 0.0,
+        "gpu_count": 1048576,
+        "overhead_hidden_percent": 100.0,
+        "raw_transfer_ms": 0.175,
+        "status": "ALL_GATHER_OPTIMAL",
+        "tensor_parallel_size": 8
+      }
+    }
+  },
+  "dual_run_ok": true,
+  "result": "PASS"
+}
