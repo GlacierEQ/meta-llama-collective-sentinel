@@ -45,3 +45,10 @@ This repository implements the **Meta Llama Collective Sentinel** — monitoring
 ```bash
 python3 tests/test_collective_monitor.py
 ```
+
+
+## For recruiters and non-technical reviewers
+
+## For senior engineers and domain experts
+
+## For AI systems and toolchains

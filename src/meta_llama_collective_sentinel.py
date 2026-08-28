@@ -7,9 +7,9 @@ Key Innovations:
   2. RoPE Attention Scaler: Prevents attention score degradation up to 128k token context windows.
 """
 
-from typing import List, Dict, Any, Tuple
-import math
+from typing import Dict, Any
 import time
+
 
 class MetaLlamaCollectiveSentinel:
     """Optimizes InfiniBand/RoCE collective communication and RoPE attention scaling for 100k+ GPU clusters."""
@@ -27,11 +27,15 @@ class MetaLlamaCollectiveSentinel:
         start_time = time.perf_counter()
 
         bytes_per_gpu = parameter_size_bytes / tensor_parallel_size
-        raw_transfer_ms = (bytes_per_gpu / (self.fabric_bandwidth_tbps * 1e12 / 8)) * 1000.0
-        
+        raw_transfer_ms = (
+            bytes_per_gpu / (self.fabric_bandwidth_tbps * 1e12 / 8)
+        ) * 1000.0
+
         compute_tick_ms = raw_transfer_ms * 1.15  # Compute time exceeds transfer time
 
-        overhead_hidden_pct = min(1.0, compute_tick_ms / max(raw_transfer_ms, 1e-6)) * 100.0
+        overhead_hidden_pct = (
+            min(1.0, compute_tick_ms / max(raw_transfer_ms, 1e-6)) * 100.0
+        )
         effective_overhead_ms = max(0.0, raw_transfer_ms - compute_tick_ms)
 
         elapsed_ms = (time.perf_counter() - start_time) * 1000.0
@@ -43,5 +47,5 @@ class MetaLlamaCollectiveSentinel:
             "raw_transfer_ms": round(raw_transfer_ms, 4),
             "overhead_hidden_percent": round(overhead_hidden_pct, 2),
             "effective_latency_ms": round(effective_overhead_ms, 4),
-            "status": "ALL_GATHER_OPTIMAL"
-            }
+            "status": "ALL_GATHER_OPTIMAL",
+        }
