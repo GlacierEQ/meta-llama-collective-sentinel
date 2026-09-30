@@ -4,12 +4,12 @@
   "source_sha": "651ddfa8a55607ddb477e19f17f7c00ff8fee5e9a51fd3bf8f6709a6e2686252",
   "proof_id": "elite-meta-llama-collective-sentinel-1786335149",
   "environment": {
-    "python": "/Users/kcbflux/job-app/excellence/.venv-elite/bin/python",
-    "PYTHONPATH": "/Users/kcbflux/job-app/repos/meta-llama-collective-sentinel:/Users/kcbflux/job-app/repos/meta-llama-collective-sentinel/src",
+    "python": "${HOME}/job-app/excellence/.venv-elite/bin/python",
+    "PYTHONPATH": "${HOME}/job-app/repos/meta-llama-collective-sentinel:${HOME}/job-app/repos/meta-llama-collective-sentinel/src",
     "entry": "unittest"
   },
   "tests": [
-    "/Users/kcbflux/job-app/excellence/.venv-elite/bin/python -m unittest discover -s tests -v (x2)"
+    "${HOME}/job-app/excellence/.venv-elite/bin/python -m unittest discover -s tests -v (x2)"
   ],
   "adversarial_tests": [
     "tests/test_adversarial.py"
